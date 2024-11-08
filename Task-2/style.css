@@ -87,6 +87,9 @@ main{
         font-size: .85rem;
     }
 }
+.card .discription{
+    text-align: end;
+}
 
 .card .img{
     flex: 1;
