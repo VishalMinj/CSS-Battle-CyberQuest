@@ -1,0 +1,135 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* CSS reset */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-wrap: balance;
+    font-family: 'Poppins';
+}
+
+.container {
+    min-height: 100dvh;
+    width: 100%;
+    background-color: #E6E1E1;
+    display: grid;
+    place-items: center;
+    padding-block: 2rem;
+    
+}
+
+.card{
+    background-color: #FAFAFA;
+    max-width: 22.5rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    box-shadow: 0 .2rem 5px 5px rgba(0, 0, 0, 0.02);
+}
+
+
+.main-stats{
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: linear-gradient(#62cff4,#2c67f2);
+    padding: 1rem;
+    gap:1rem;
+    border-bottom-left-radius: 4rem;
+    box-shadow: 0 .2rem 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    
+    & img{
+        width: 150%;
+        object-position: center;
+        object-fit: cover;
+    }
+    
+    & ul{
+        list-style: none;
+    }
+
+    & h3{
+        font-size: 1.2rem;
+    }
+}
+
+main .stats{
+    padding-top: 1rem;
+    height: 10rem;
+
+    & ul{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        & li:first-child{
+            margin-bottom: 2rem;
+        }
+    }
+
+    & h2{
+        font-size: 1.75rem;
+    }
+
+    & p{
+        font-weight: 600;
+        font-size: .75rem;
+    }
+}
+
+
+
+/* Sub card info */
+
+.sub-details{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    padding: 1.5rem;
+
+    & h4{
+        font-size: .95rem;
+    }
+
+    & img{
+        max-width: 100%;
+        height: 2.5rem;
+    }
+    & p{
+        font-size: .75rem;
+    }
+}
+
+
+.sub-card{
+    display: flex;
+    padding: 1.25rem .5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 .2rem 5px 5px rgba(0, 0, 0, 0.03);
+    border-radius: .5rem;
+    align-items: center;
+    gap: .5rem;
+}
+
+.dps{
+    padding-block: .5rem;
+}
+
+.dps img{
+    height: 3.5rem;
+    object-position: left;
+    
+}
+
