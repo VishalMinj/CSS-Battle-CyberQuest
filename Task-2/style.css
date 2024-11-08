@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* CSS reset */
 
 
@@ -11,5 +13,126 @@
     margin: 0;
     padding: 0;
     text-wrap: balance;
+    font-family: 'Poppins';
 }
 
+
+.container {
+    height: 100dvh;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* header style */
+
+header{
+    display: flex;
+    padding: .5rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 1.75rem;
+    & strong{
+        color: red;
+    }  
+}
+
+header .search-bar{
+    width: 20rem;
+    
+}
+header input{
+    padding: .5rem 1rem;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5rem;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+
+/* Main styling */
+
+main{
+    flex:1;
+    display: flex;
+    gap: 1.25rem;
+    padding: .5rem 4rem;
+    align-items: center;
+
+}
+.card{
+    background-color: black;
+    flex: 1;
+    height: 16rem;
+    border-radius: .75rem;
+    color: #fff;
+    display: flex;
+    padding: .5rem;
+
+    & h3{
+        font-size: 1.25rem;
+    }
+    & p{
+        font-size: .85rem;
+    }
+}
+
+.card .img{
+    flex: 1;
+}
+
+.card img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.card .burst{
+    object-fit: cover;
+}
+
+main .card:nth-child(1){
+    background-image: linear-gradient(105deg,#5efce8,#736efe);
+    & img{
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+main .card:nth-child(2){
+    background-image: linear-gradient(105deg,#BB1900,#FD6F01,#FFB000);
+}
+main .card:nth-child(3){
+    background-image: linear-gradient(-75deg,#5efce8,#736efe);
+    & img{
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+main .card:nth-child(4){
+    background-image: linear-gradient(125deg,#A2264B,#1034A6,#1034A6);
+}
+
+
+/* Footer Styling */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .5rem 4rem;
+}
+
+footer .socials *{
+    display: inline;
+    margin-inline: 1.5rem;
+}
