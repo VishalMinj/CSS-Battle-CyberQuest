@@ -33,7 +33,7 @@
     max-width: 22.5rem;
     padding-bottom: 1rem;
     width: 90%;
-    box-shadow: 0 .2rem 5px 5px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 .2rem 9px 9px rgba(0, 0, 0, 0.02);
 }
 
 
@@ -52,8 +52,8 @@ main{
     justify-content: center;
     
     & img{
-        width: 150%;
-        object-position: center;
+        width: 200%;
+        object-position: left;
         object-fit: cover;
     }
     
@@ -68,7 +68,7 @@ main{
 
 main .stats{
     padding-top: 1rem;
-    height: 10rem;
+    padding-left: 1rem;
 
     & ul{
         display: flex;
@@ -117,8 +117,8 @@ main .stats{
     display: flex;
     padding: 1.25rem .5rem;
     background-color: #FFFFFF;
-    box-shadow: 0 .2rem 5px 5px rgba(0, 0, 0, 0.03);
-    border-radius: .5rem;
+    box-shadow: 0 .25rem 9px 9px rgba(0, 0, 0, 0.02);
+    border-radius: 1rem;
     align-items: center;
     gap: .5rem;
 }
